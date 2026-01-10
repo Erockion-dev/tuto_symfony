@@ -20,18 +20,6 @@ services:
     depends_on:
       - php
 
-  # postgres:
-  #   image: postgres:16
-  #   container_name: symfony_postgres
-  #   environment:
-  #     POSTGRES_DB: symfony
-  #     POSTGRES_USER: symfony
-  #     POSTGRES_PASSWORD: symfony
-  #   volumes:
-  #     - postgres_data:/var/lib/postgresql/data
-  #   ports:
-  #     - "5432:5432"
-
   mariadb:
     image: mariadb:11
     container_name: symfony_mariadb
